@@ -1,0 +1,46 @@
+// Модуль 14: Работа с DOM
+
+::Вопрос 1::
+Какой объект является главной входной точкой в DOM и представляет всю веб-страницу?
+{
+~window
+=document
+~html
+~body
+}
+
+::Вопрос 2::
+Какой метод вернет все элементы на странице, которые имеют класс active?
+{
+~document.querySelector(".active")
+~document.getElementById("active")
+=document.querySelectorAll(".active")
+~document.find(".active")
+}
+
+::Вопрос 3::
+Как правильно добавить CSS-класс highlight к элементу myElem, не затирая старые классы?
+{
+~myElem.class = "highlight"
+=myElem.classList.add("highlight")
+~myElem.setAttribute("class", "highlight")
+~myElem.style.class = "highlight"
+}
+
+::Вопрос 4::
+В чем основное отличие textContent от innerHTML?
+{
+~Разницы нет
+~textContent работает только с заголовками
+=innerHTML интерпретирует строку как HTML-код, а textContent — как обычный текст
+~textContent работает быстрее, но только в браузере Chrome
+}
+
+::Вопрос 5::
+Какой метод используется для удаления элемента из дерева DOM?
+{
+~delete()
+=remove()
+~clear()
+~destroy()
+}

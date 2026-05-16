@@ -1,0 +1,46 @@
+// Модуль 19: Canvas API
+
+::Вопрос 1::
+Какой метод используется для получения контекста рисования 2D-графики?
+{
+=canvas.getContext("2d")
+~canvas.get2D()
+~document.getCanvasContext()
+~canvas.draw("2d")
+}
+
+::Вопрос 2::
+Чем fillRect отличается от strokeRect?
+{
+~fillRect рисует только круг, а strokeRect — прямоугольник
+=fillRect рисует закрашенную фигуру, а strokeRect — только контур
+~fillRect работает быстрее
+~Между ними нет разницы
+}
+
+::Вопрос 3::
+Какой метод нужно вызвать ОБЯЗАТЕЛЬНО перед началом рисования новой сложной фигуры (линии, дуги)?
+{
+~ctx.stop()
+~ctx.clear()
+=ctx.beginPath()
+~ctx.newPath()
+}
+
+::Вопрос 4::
+Почему рекомендуется использовать requestAnimationFrame для анимации вместо setInterval?
+{
+~requestAnimationFrame работает только в 3D
+=requestAnimationFrame синхронизируется с частотой обновления экрана и экономит ресурсы (не работает в фоновых вкладках)
+~setInterval запрещен в современном JavaScript
+~Разницы нет
+}
+
+::Вопрос 5::
+Как изменить цвет заливки для последующих фигур?
+{
+~ctx.color = "red"
+~ctx.paint = "red"
+=ctx.fillStyle = "red"
+~ctx.setBackground("red")
+}

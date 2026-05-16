@@ -1,0 +1,46 @@
+// Модуль 18: Хранение данных
+
+::Вопрос 1::
+В чем основное отличие localStorage от sessionStorage?
+{
+~localStorage работает быстрее
+=sessionStorage удаляется при закрытии вкладки, а localStorage — нет
+~localStorage может хранить объекты, а sessionStorage — нет
+~sessionStorage доступен только в Node.js
+}
+
+::Вопрос 2::
+Что вернет метод getItem(), если запрашиваемого ключа не существует в хранилище?
+{
+~undefined
+~"" (пустая строка)
+=null
+~Вызовет ошибку
+}
+
+::Вопрос 3::
+Как правильно сохранить объект user = {id: 1} в LocalStorage?
+{
+~localStorage.setItem("user", user)
+~localStorage.save(user)
+=localStorage.setItem("user", JSON.stringify(user))
+~localStorage.user = user
+}
+
+::Вопрос 4::
+Какой объем данных (примерно) можно хранить в LocalStorage?
+{
+~1 ГБ
+~100 КБ
+=5-10 МБ
+~Неограниченно
+}
+
+::Вопрос 5::
+Как полностью удалить ВСЕ данные из LocalStorage?
+{
+~localStorage.delete()
+~localStorage.removeItem("*")
+=localStorage.clear()
+~localStorage.reset()
+}
